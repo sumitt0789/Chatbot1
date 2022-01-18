@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
+body {
+  background: #d15189;
+}
+.nav {
+  background-color: #97144d;
+  height: 3rem;
+  width: 100%;
+  border: 1px solid black;
+  position: sticky;
+  top: 0;
+}
+.chatbox::-webkit-scrollbar {
+  display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.chatbox {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chatbox {
+  background: #fbfbfb;
+  height: 35rem;
+  width: 25rem;
+  position: relative;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.userchat {
+  background-color: rgba(255, 255, 255, 255);
+  border-radius: 18px;
+}
+.botchat {
+  background-color: rgba(241, 241, 241, 255);
+  width: 19rem;
+  border-radius: 18px;
+}
+.userchatarea {
+  text-align: right;
+  display: flex;
+  float: right;
+}
+.botchatarea {
+  display: flex;
+}
+.textarea {
+  display: flex;
+  bottom: 0;
+  position: sticky;
+  width: 100%;
+}
+.userchatsection {
+  width: 100%;
+}
+.botchatsection {
+  width: 50%;
+}
+#speechinput {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  margin-left: 5px;
+  outline: none;
+  background: transparent;
+}
+.mic {
+  margin-left: 19rem;
+  font-size: 21px;
+  margin-top: -1.7rem;
+  position: absolute;
+}
+.chattogele {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.chattogelediv {
+  text-align: right;
+}
+.chatcontainer {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.inputtext {
+  padding: 8px;
+  width: 96%;
+  background-color: rgba(241, 241, 241, 255);
+  border-radius: 2rem;
+  border: 0;
+}
+.inputsection {
+  width: 80%;
+}
+.langsection {
+  width: 20%;
+  display: flex;
+}
+.langsection button {
+  width: 50%;
+  padding: 0;
+  margin: 0.2rem;
+}
+.icon {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(196, 196, 196, 255);
+}
+.section {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow-y: scroll;
+}
+.botchatarea {
+  display: flex;
+}
+.botchatld {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.likedislike {
+  float: right;
+  text-align: right;
+  width: 17rem;
+}
+.likedislike button {
+  background-color: #ececec;
+  border: 0;
+}
+.likedislike button i {
+  color: ececec;
 }
 
-.App-link {
-  color: #61dafb;
+.boldicon {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icontop {
+  height: 85%;
 }
